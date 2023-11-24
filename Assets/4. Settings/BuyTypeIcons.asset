@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed59c25775e0487683b2e5f6c27808a0, type: 3}
+  m_Name: BuyTypeIcons
+  m_EditorClassIdentifier: 
+  coins: {fileID: 21300000, guid: 9ffae26c9db534d53b6bcf163450eba2, type: 3}
+  ad: {fileID: 21300000, guid: 1866a5d604d889e4bb38d2dfa68b1e6d, type: 3}
+  premium: {fileID: 21300000, guid: cdcda0e7aac2cf8449e184f139f5b1b8, type: 3}
