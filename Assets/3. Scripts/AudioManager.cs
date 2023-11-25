@@ -8,6 +8,7 @@ namespace _3._Scripts
     public class AudioManager: Singleton<AudioManager>
     {
         [field: SerializeField] public SoundsConfig Config { get; private set; }
+        [SerializeField] private AudioSource musicAudioSource;
         private AudioSource _audioSource;
         protected override void Awake()
         {
@@ -21,6 +22,12 @@ namespace _3._Scripts
         {
             _audioSource.volume = volume;
             _audioSource.PlayOneShot(clip);
+        }
+
+        public void MusicState(bool state)
+        {
+            if(state) musicAudioSource.Play();
+            else musicAudioSource.Stop();
         }
     }
 }

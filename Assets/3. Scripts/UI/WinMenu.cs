@@ -74,9 +74,11 @@ namespace _3._Scripts.UI
                 ? ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier
                 : ScoreManager.instance.levelGoal;
             _progressOpened = true;
-            await Task.Delay(1000);
-            GameManager.instance.ChangePanel(GameManager.instance.MapPanel);
+            
+            await Task.Delay(750);
             progressMenu.ShowProgress();
+            
+            GameManager.instance.ChangePanel(GameManager.instance.MapPanel);
         }
 
         private async void AdReward(int id)
@@ -85,7 +87,7 @@ namespace _3._Scripts.UI
             AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
             _bonusUsed = true;
             reward.text = $"{ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier}<sprite=0>";
-            await Task.Delay(1000);
+            await Task.Delay(750);
             OpenProgress();
         }
 

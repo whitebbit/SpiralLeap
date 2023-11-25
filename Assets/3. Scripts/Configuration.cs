@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using _3._Scripts.Architecture;
 using _3._Scripts.Architecture.Scriptable;
 using UnityEngine;
@@ -19,8 +20,9 @@ namespace _3._Scripts
             DontDestroyOnLoad(gameObject);
         }
 
-        private void Start()
+        private async void Start()
         {
+            await Task.Delay(1500);
             SceneManager.LoadScene(1);
         }
     }

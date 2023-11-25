@@ -31,6 +31,7 @@ namespace _3._Scripts.UI
             {
                 SetIcon();
                 SetVolume();
+                AudioManager.instance.MusicState(true);
             }
             catch (Exception e)
             {

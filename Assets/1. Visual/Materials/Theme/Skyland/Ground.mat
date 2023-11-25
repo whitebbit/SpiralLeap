@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ground
-  m_Shader: {fileID: 4800000, guid: ccfc7d68845db8341944b3091b59be55, type: 3}
+  m_Shader: {fileID: 4800000, guid: 313fcf3aebc04cf4ab4f8c5f2850be7f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,6 +23,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTex1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -75,17 +87,40 @@ Material:
     - _Metallic: 0.491
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineWidth: 0.107
     - _Parallax: 0.02
     - _RampSmooth: 0.1
+    - _RampSmoothing: 0.5
+    - _RampSmoothingOtherLights: 0.5
     - _RampThreshold: 0.5
+    - _RampThresholdOtherLights: 0.5
+    - _ReceiveShadowsOff: 1
+    - _RimStep: 0
+    - _RimStepSmooth: 0
+    - _ShadowStep: 0.5
+    - _ShadowStepSmooth: 0.04
+    - _Shadow_HSV_H: 0
+    - _Shadow_HSV_S: 0
+    - _Shadow_HSV_V: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SpecularStep: 0
+    - _SpecularStepSmooth: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - __BeginGroup_ShadowHSV: 0
+    - __EndGroup: 0
+    - __dummy__: 0
     m_Colors:
+    - _BaseColor: {r: 0.14057496, g: 0.68883073, b: 0.764151, a: 1}
     - _Color: {r: 0.14057496, g: 0.62215006, b: 0.764151, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.785, g: 0.785, b: 0.785, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _SColor: {r: 0.195, g: 0.195, b: 0.195, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _VColorBlendOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _VColorBlendSmooth: {r: 0.25, g: 0.25, b: 0.25, a: 0.25}
   m_BuildTextureStacks: []

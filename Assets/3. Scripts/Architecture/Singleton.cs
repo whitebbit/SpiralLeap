@@ -28,6 +28,10 @@ namespace _3._Scripts.Architecture
             {
                 _instance = this as T;
             }
+            else
+            {
+                //Destroy(_instance.gameObject);
+            }
         }
     }
 }
