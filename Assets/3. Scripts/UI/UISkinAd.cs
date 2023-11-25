@@ -40,6 +40,7 @@ namespace _3._Scripts.UI
         {
             if (id != _rewardAdObject.id) return;
             YandexGame.savesData.unlockedSkins.Add(_skin.Name);
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
             YandexGame.SaveProgress();
             Unlock();
         }

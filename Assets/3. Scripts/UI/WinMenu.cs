@@ -29,12 +29,16 @@ namespace _3._Scripts.UI
         private bool _bonusUsed;
         private bool _progressOpened;
         private UIBonusMultiplier _currentMultiplier;
-        private List<Tween> _bonusGameTweens = new List<Tween>();
+        private readonly List<Tween> _bonusGameTweens = new List<Tween>();
 
         private void Awake()
         {
             _rewardAdObject = new RewardAdObject();
-            continueButton.onClick.AddListener(OpenProgress);
+            continueButton.onClick.AddListener(()=>
+            {
+                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                OpenProgress();
+            });
             adRewardButton.onClick.AddListener(GetBonus);
             reward.text = $"{ScoreManager.instance.levelGoal}<sprite=0>";
 
@@ -44,7 +48,6 @@ namespace _3._Scripts.UI
         private void GetBonus()
         {
             if (_bonusUsed) return;
-
             YandexGame.RewVideoShow(_rewardAdObject.id);
             foreach (var tween in _bonusGameTweens)
             {
@@ -65,7 +68,7 @@ namespace _3._Scripts.UI
         }
 
         private async void OpenProgress()
-        {
+        {            
             if (_progressOpened) return;
             MoneyWidget.money += _bonusUsed
                 ? ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier
@@ -79,6 +82,7 @@ namespace _3._Scripts.UI
         private async void AdReward(int id)
         {
             if (id != _rewardAdObject.id) return;
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
             _bonusUsed = true;
             reward.text = $"{ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier}<sprite=0>";
             await Task.Delay(1000);

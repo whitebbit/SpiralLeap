@@ -50,8 +50,16 @@ public class GameManager : Singleton<GameManager>
         isStarted = false;
 
         CreateHelix();
-        shopButton.onClick.AddListener(() => ChangePanel(shopPanel));
-        premiumButton.onClick.AddListener(() => ChangePanel(premiumPanel));
+        shopButton.onClick.AddListener(() =>
+        {
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+            ChangePanel(shopPanel);
+        });
+        premiumButton.onClick.AddListener(() =>
+        {
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+            ChangePanel(premiumPanel);
+        });
     
         GetLoad();
         YandexAD.ShowInterstitial();
@@ -116,7 +124,8 @@ public class GameManager : Singleton<GameManager>
     {
         if (isStarted) return;
         isStarted = true;
-        ChangePanel(playPanel);
+        ChangePanel(playPanel);                
+        AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
     }
 
     public void NextLevel()

@@ -46,7 +46,10 @@ namespace _3._Scripts.UI
             currentLevel.LevelComplete()
                 .OnComplete(() => AnimateLine().OnComplete(() =>
                 {
-                    nextLevel.Unlock();
+                    nextLevel.Unlock().OnComplete(() =>
+                    {
+                        AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UnlockLevel);
+                    });
                     MoveMap();
                 }));
         }
@@ -54,6 +57,7 @@ namespace _3._Scripts.UI
         private void Continue()
         {
             GameManager.instance.NextLevel();
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
         }
 
         private void SetLevelsPositions()

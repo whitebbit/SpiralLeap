@@ -15,10 +15,20 @@ namespace _3._Scripts.UI
         [SerializeField] private string id;
         [SerializeField] private Sprite secretSkinUnlockedIcon;
         [SerializeField] private Button buyButton;
+        [SerializeField] private Button closeButton;
 
         private void Start()
         {
-            buyButton.onClick.AddListener(() => YandexGame.BuyPayments(id));
+            buyButton.onClick.AddListener(() =>
+            {
+                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                YandexGame.BuyPayments(id);
+            });
+            closeButton.onClick.AddListener(() =>
+            {
+                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                GameManager.instance.ChangePanel(GameManager.instance.MenuPanel);
+            });
         }
 
         private void OnEnable()
@@ -40,6 +50,8 @@ namespace _3._Scripts.UI
             var skin = Configuration.instance.skinsHolder.GetSkinByType(BuyType.Premium);
             skin.ChangeIcon(secretSkinUnlockedIcon);
             YandexGame.savesData.unlockedSkins.Add(skin.Name);
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
+
             await Task.Delay(1000);
             SceneManager.LoadScene("Main");
         }

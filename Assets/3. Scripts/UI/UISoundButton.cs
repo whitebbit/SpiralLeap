@@ -52,6 +52,7 @@ namespace _3._Scripts.UI
         }
         private void ChangeVolume()
         {
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
             YandexGame.savesData.soundActive = !YandexGame.savesData.soundActive;
             YandexGame.SaveProgress();
             SetIcon();

@@ -180,6 +180,7 @@ namespace HelixJumper.Scripts
             IsGameOver = true;
             BallRB.isKinematic = true;
             GameManager.instance.ChangePanel(GameManager.instance.LosePanel);
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnLose);
         }
 
         public void Continue()

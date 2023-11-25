@@ -44,6 +44,7 @@ namespace _3._Scripts.UI
         {
             if (!Locked) Select();
             else Buy();
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
         }
 
         public void Select()

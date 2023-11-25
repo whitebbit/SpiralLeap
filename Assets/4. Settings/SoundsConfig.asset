@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64900dd113a4aa68a183cf9ef627d1d, type: 3}
+  m_Name: SoundsConfig
+  m_EditorClassIdentifier: 
+  <UIClick>k__BackingField: {fileID: 8300000, guid: df7d25978f9d0497faa8befca7e29c19,
+    type: 3}
+  <OnReward>k__BackingField: {fileID: 8300000, guid: 5ea9b321809ddd843873462c5770dbf0,
+    type: 3}
+  <OnWin>k__BackingField: {fileID: 8300000, guid: 95e9957eb40064935a54aaca8ca04c01,
+    type: 3}
+  <OnLose>k__BackingField: {fileID: 8300000, guid: 9212b64f8618343cf90461126a9444ee,
+    type: 3}
+  <UnlockLevel>k__BackingField: {fileID: 8300000, guid: 8db61ce7e74fe694dbd2e2b038e0001d,
+    type: 3}
+  <BuySkin>k__BackingField: {fileID: 8300000, guid: f762dd5704ef22a4fbe1b96c6578727e,
+    type: 3}

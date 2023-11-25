@@ -30,6 +30,7 @@ namespace _3._Scripts.UI
             MoneyWidget.money -= 1000;
             YandexGame.savesData.unlockedSkins.Add(_skin.Name);
             YandexGame.SaveProgress();
+            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.BuySkin);
             Unlock();
         }
     }
