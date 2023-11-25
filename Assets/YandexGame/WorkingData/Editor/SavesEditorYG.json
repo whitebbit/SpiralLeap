@@ -1,13 +1,13 @@
 {
-    "idSave": 129,
+    "idSave": 222,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "money": 4419,
+    "money": 4553,
     "currentSkin": "candy",
-    "currentLevel": 5,
+    "currentLevel": 7,
     "premium": true,
-    "soundActive": true,
+    "soundActive": false,
     "unlockedSkins": [
         "dice",
         "candy",

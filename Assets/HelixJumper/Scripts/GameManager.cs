@@ -60,11 +60,11 @@ public class GameManager : Singleton<GameManager>
             AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
             ChangePanel(premiumPanel);
         });
+        premiumButton.transform.parent.gameObject.SetActive(!YandexGame.savesData.premium);
     
         GetLoad();
-        YandexAD.ShowInterstitial();
-        
-        premiumButton.transform.parent.gameObject.SetActive(!YandexGame.savesData.premium);
+        YandexGame.StickyAdActivity(true);
+        OnSceneLoad();
     }
 
     private static void LoadLevel()
@@ -161,5 +161,28 @@ public class GameManager : Singleton<GameManager>
             Debug.LogError(e);
             throw;
         }
+    }
+
+
+    private void OnSceneLoad()
+    {
+        if (YandexGame.savesData.currentLevel is 3 or 7 or 11)
+        {
+            if (YandexGame.EnvironmentData.promptCanShow && !YandexGame.savesData.promptDone)
+            {
+                YandexGame.PromptShow();
+                return;
+            }
+        }
+        if (YandexGame.savesData.currentLevel is 2 or 6 or 10)
+        {
+            if (YandexGame.EnvironmentData.reviewCanShow)
+            {
+                YandexGame.ReviewShow(true);
+                return;
+            }
+        }
+        
+        YandexAD.ShowInterstitial();
     }
 }
