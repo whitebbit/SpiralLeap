@@ -70,9 +70,20 @@ namespace _3._Scripts.UI
         private async void OpenProgress()
         {            
             if (_progressOpened) return;
+            if (!_bonusUsed)
+            {
+                reward.text = $"{ScoreManager.instance.levelGoal}<sprite=0>";
+                foreach (var tween in _bonusGameTweens)
+                {
+                    tween.Pause();
+                    tween.Kill();
+                }
+            }
+            
             MoneyWidget.money += _bonusUsed
                 ? ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier
                 : ScoreManager.instance.levelGoal;
+            
             _progressOpened = true;
             
             await Task.Delay(750);
@@ -117,7 +128,9 @@ namespace _3._Scripts.UI
         {
             var bonusMultiplier = UIRaycast.FindObject<UIBonusMultiplier>(indicator.position);
             if (bonusMultiplier == null) return;
+            
             multiplierText.additionalText = $" {bonusMultiplier.Multiplier}X";
+            reward.text = $"{ScoreManager.instance.levelGoal * bonusMultiplier.Multiplier}<sprite=0>";
             _currentMultiplier = bonusMultiplier;
         }
     }
