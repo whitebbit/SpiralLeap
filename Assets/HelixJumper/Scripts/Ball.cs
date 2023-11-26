@@ -181,6 +181,7 @@ namespace HelixJumper.Scripts
             BallRB.isKinematic = true;
             GameManager.instance.ChangePanel(GameManager.instance.LosePanel);
             AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnLose);
+            CameraShaker.instance.StopShake();
         }
 
         public void Continue()
