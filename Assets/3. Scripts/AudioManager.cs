@@ -26,7 +26,12 @@ namespace _3._Scripts
 
         public void MusicState(bool state)
         {
-            if(state) musicAudioSource.Play();
+            
+            if(state)
+            {
+                if(!musicAudioSource.isPlaying)
+                    musicAudioSource.Play();
+            } 
             else musicAudioSource.Stop();
         }
     }
