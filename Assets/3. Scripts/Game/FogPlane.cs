@@ -11,7 +11,12 @@ namespace _3._Scripts.Game
         private void Start()
         {
             var component = GetComponent<MeshRenderer>();
-            component.material.SetColor(Property, GameManager.CurrentTheme.Fog);
+            var theme = GameManager.CurrentTheme.FogSetting;
+            component.material.SetColor(Property, theme.floorFog);
+            
+            RenderSettings.fogColor = theme.backgroundFog;
+            RenderSettings.fogStartDistance = theme.startValue;
+            RenderSettings.fogEndDistance = theme.endValue;
         }
     }
 }

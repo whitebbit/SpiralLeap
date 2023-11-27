@@ -76,7 +76,6 @@ public class GameManager : Singleton<GameManager>
             CurrentTheme = Configuration.instance.themesHolder.GetRandomTheme();
 
         RenderSettings.skybox = CurrentTheme.Skybox;
-        RenderSettings.fogColor = CurrentTheme.Fog;
         Instantiate(CurrentTheme.Background);
     }
 
