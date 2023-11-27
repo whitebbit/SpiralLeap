@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Themes Holder
   m_EditorClassIdentifier: 
   themes:
-  - {fileID: 11400000, guid: a490946479ab47240b163cb8ebb3b03f, type: 2}
+  - {fileID: 11400000, guid: 90449329482b8534eaa6cbd72b77b864, type: 2}

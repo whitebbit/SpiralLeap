@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bed26f981e841cca718e49ccf6262b0, type: 3}
+  m_Name: Neon City
+  m_EditorClassIdentifier: 
+  ground: {fileID: 2100000, guid: d4eb6e1e5884c8c4c99a786055a26db8, type: 2}
+  deadGround: {fileID: 2100000, guid: fa2a2d2131538544284cdc1fe41ab379, type: 2}
+  cylinder: {fileID: 2100000, guid: 09191aa6e85eed54993a79801fa8ba1e, type: 2}
+  background: {fileID: 2102241535234213929, guid: 03ec4aa87ccc6824fac4ba8b71c22c66,
+    type: 3}
+  fog: {r: 0.46457815, g: 0.47334006, b: 0.6792453, a: 0.8}
+  skybox: {fileID: 2100000, guid: 01210524c7185c74babbd24988b46fc0, type: 2}
