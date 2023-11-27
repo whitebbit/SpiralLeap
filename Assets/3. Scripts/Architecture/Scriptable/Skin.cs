@@ -16,7 +16,7 @@ namespace _3._Scripts.Architecture.Scriptable
         [SerializeField] private Sprite image;
         [SerializeField] private BuyType buyType;
 
-        public string Name => mesh.name;
+        public string Name => $"{name}";
         public Sprite Image => image;
         public BuyType BuyType => buyType;
         public Color Color => color;

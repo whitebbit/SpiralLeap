@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Threading.Tasks;
 using _3._Scripts.Architecture;
 using _3._Scripts.Architecture.Scriptable;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 namespace _3._Scripts
 {
@@ -20,10 +22,21 @@ namespace _3._Scripts
             DontDestroyOnLoad(gameObject);
         }
 
-        private async void Start()
+        private void Start()
         {
-            await Task.Delay(1500);
-            SceneManager.LoadScene(1);
+            StartCoroutine(LoadScene());
+        }
+
+        private IEnumerator LoadScene()
+        {
+            while (!YandexGame.SDKEnabled)
+            {
+                Debug.Log($"YandexGame.SDKEnabled is {YandexGame.SDKEnabled}");
+                yield return null;
+            }
+            
+            
+            SceneManager.LoadScene("Main");
         }
     }
 }

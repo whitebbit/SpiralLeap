@@ -26,7 +26,7 @@ namespace YG
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
-            currentSkin = "ball";
+            currentSkin = "Ball";
             currentLevel = 1;
             soundActive = true;
         }

@@ -19,7 +19,6 @@ public class MoveController : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     {
         delta = eventData.position;
         Move();
-
     }
 
     public void OnEndDrag(PointerEventData eventData)

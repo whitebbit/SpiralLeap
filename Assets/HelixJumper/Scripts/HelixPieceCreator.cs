@@ -23,12 +23,12 @@ public class HelixPieceCreator : MonoBehaviour
 
     private void OnEnable()
     {
-        MoveController.Move += Move;
+        //MoveController.Move += Move;
     }
 
     private void OnDisable()
     {
-        MoveController.Move -= Move;
+        //MoveController.Move -= Move;
     }
 
     private void Awake()

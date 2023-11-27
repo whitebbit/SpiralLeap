@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using _3._Scripts.AD;
@@ -37,7 +38,7 @@ namespace _3._Scripts.UI
             continueButton.onClick.AddListener(()=>
             {
                 AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
-                OpenProgress();
+                StartCoroutine(OpenProgress());
             });
             adRewardButton.onClick.AddListener(GetBonus);
             reward.text = $"{ScoreManager.instance.levelGoal}<sprite=0>";
@@ -59,17 +60,17 @@ namespace _3._Scripts.UI
 
         private void OnEnable()
         {
-            YandexGame.RewardVideoEvent += AdReward;
+            YandexGame.RewardVideoEvent += StartAdReward;
         }
-
+    
         private void OnDisable()
         {
-            YandexGame.RewardVideoEvent -= AdReward;
+            YandexGame.RewardVideoEvent -= StartAdReward;
         }
 
-        private async void OpenProgress()
+        private IEnumerator OpenProgress()
         {            
-            if (_progressOpened) return;
+            if (_progressOpened) yield break;
             if (!_bonusUsed)
             {
                 reward.text = $"{ScoreManager.instance.levelGoal}<sprite=0>";
@@ -85,21 +86,23 @@ namespace _3._Scripts.UI
                 : ScoreManager.instance.levelGoal;
             
             _progressOpened = true;
+
+            yield return new WaitForSeconds(0.75f);
             
-            await Task.Delay(750);
             progressMenu.ShowProgress();
-            
             GameManager.instance.ChangePanel(GameManager.instance.MapPanel);
         }
 
-        private async void AdReward(int id)
+        private void StartAdReward(int id) => StartCoroutine(AdReward(id));
+        private IEnumerator AdReward(int id)
         {
-            if (id != _rewardAdObject.id) return;
+            if (id != _rewardAdObject.id) yield break;
             AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
             _bonusUsed = true;
             reward.text = $"{ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier}<sprite=0>";
-            await Task.Delay(750);
-            OpenProgress();
+            yield return new WaitForSeconds(0.75f);
+
+            StartCoroutine(OpenProgress());
         }
 
         private void MoveIndicator()

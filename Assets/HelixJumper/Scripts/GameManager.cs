@@ -17,6 +17,7 @@ public class GameManager : Singleton<GameManager>
 {
     public GameObject HelixPlatformPrefab;
     [SerializeField] private Finish finishHelix;
+    [SerializeField] private Cylinder cylinder;
     [Header("Panels")] [SerializeField] private CanvasGroup playPanel;
     [SerializeField] private CanvasGroup menuPanel;
     [SerializeField] private CanvasGroup losePanel;
@@ -36,6 +37,8 @@ public class GameManager : Singleton<GameManager>
     private CanvasGroup _currentPanel;
     public static bool isStarted { get; private set; }
     public static Theme CurrentTheme;
+
+    private List<Tween> _tweens = new List<Tween>();
 
     protected override void Awake()
     {
@@ -61,7 +64,7 @@ public class GameManager : Singleton<GameManager>
             ChangePanel(premiumPanel);
         });
         premiumButton.transform.parent.gameObject.SetActive(!YandexGame.savesData.premium);
-    
+
         GetLoad();
         YandexGame.StickyAdActivity(true);
         OnSceneLoad();
@@ -79,8 +82,8 @@ public class GameManager : Singleton<GameManager>
     public void ChangePanel(CanvasGroup panel)
     {
         PanelState(_currentPanel, false);
-        PanelState(panel, true);
         _currentPanel = panel;
+        PanelState(panel, true);
     }
 
     private void CreateHelix()
@@ -90,33 +93,52 @@ public class GameManager : Singleton<GameManager>
         {
             if (i == ScoreManager.instance.levelGoal - 1)
             {
-                var finish = Instantiate(finishHelix, transform);
+                var finish = Instantiate(finishHelix, cylinder.transform);
                 finish.transform.position = new Vector3(0, yPos, 0);
             }
             else
             {
-                var helixPlatform = Instantiate(HelixPlatformPrefab, transform);
+                var helixPlatform = Instantiate(HelixPlatformPrefab, cylinder.transform);
                 helixPlatform.transform.position = new Vector3(0, yPos, 0);
                 yPos -= 3.5f;
             }
         }
     }
 
-    private static void PanelState(CanvasGroup panel, bool state)
+    private void PanelState(CanvasGroup panel, bool state)
     {
+        foreach (var tween in _tweens)
+        {
+            tween.Pause();
+            tween.Kill();
+        }
+
+        _tweens.Clear();
+
         if (state)
         {
+            var open = panel.DOFade(1, 0.25f).OnKill(() =>
+            {
+                panel.blocksRaycasts = true;
+                panel.alpha = 1;
+                panel.gameObject.SetActive(true);
+            });
+            _tweens.Add(open);
             panel.gameObject.SetActive(true);
-            panel.DOFade(1, 0.25f);
             panel.blocksRaycasts = true;
         }
         else
         {
-            panel.DOFade(0, .25f).OnComplete(() =>
-            {
-                panel.gameObject.SetActive(false);
-                panel.blocksRaycasts = false;
-            });
+            panel.blocksRaycasts = false;
+            var close = panel.DOFade(0, .25f)
+                .OnComplete(() => { panel.gameObject.SetActive(false); })
+                .OnKill(() =>
+                {
+                    panel.blocksRaycasts = false;
+                    panel.alpha = 0;
+                    panel.gameObject.SetActive(false);
+                });
+            _tweens.Add(close);
         }
     }
 
@@ -124,7 +146,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (isStarted) return;
         isStarted = true;
-        ChangePanel(playPanel);                
+        ChangePanel(playPanel);
         AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
     }
 
@@ -174,6 +196,7 @@ public class GameManager : Singleton<GameManager>
                 return;
             }
         }
+
         if (YandexGame.savesData.currentLevel is 2 or 6 or 10)
         {
             if (YandexGame.EnvironmentData.reviewCanShow)
@@ -182,7 +205,7 @@ public class GameManager : Singleton<GameManager>
                 return;
             }
         }
-        
+
         YandexAD.ShowInterstitial();
     }
 }
