@@ -76,6 +76,7 @@ public class GameManager : Singleton<GameManager>
             CurrentTheme = Configuration.instance.themesHolder.GetRandomTheme();
 
         RenderSettings.skybox = CurrentTheme.Skybox;
+        RenderSettings.fogColor = CurrentTheme.Fog;
         Instantiate(CurrentTheme.Background);
     }
 
@@ -188,16 +189,7 @@ public class GameManager : Singleton<GameManager>
 
     private void OnSceneLoad()
     {
-        if (YandexGame.savesData.currentLevel is 3 or 7 or 11)
-        {
-            if (YandexGame.EnvironmentData.promptCanShow && !YandexGame.savesData.promptDone)
-            {
-                YandexGame.PromptShow();
-                return;
-            }
-        }
-
-        if (YandexGame.savesData.currentLevel is 2 or 6 or 10)
+        if (YandexGame.savesData.currentLevel is 3 || YandexGame.savesData.currentLevel % 10 == 0)
         {
             if (YandexGame.EnvironmentData.reviewCanShow)
             {

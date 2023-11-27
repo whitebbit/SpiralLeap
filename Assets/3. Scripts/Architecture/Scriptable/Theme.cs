@@ -5,10 +5,13 @@ namespace _3._Scripts.Architecture.Scriptable
     [CreateAssetMenu(fileName = "New Theme", menuName = "Configs/Themes/Theme")]
     public class Theme: ScriptableObject
     {
+        [Header("Main objects")]
         [SerializeField] private Material ground;
         [SerializeField] private Material deadGround;
         [SerializeField] private Material cylinder;
+        [Header("Environment")]
         [SerializeField] private Transform background;
+        [SerializeField] private Color fog;
         [SerializeField] private Material skybox;
 
         public Material Ground => ground;
@@ -16,5 +19,6 @@ namespace _3._Scripts.Architecture.Scriptable
         public Material Cylinder => cylinder;
         public Transform Background => background;
         public Material Skybox => skybox;
+        public Color Fog => fog;
     }
 }
