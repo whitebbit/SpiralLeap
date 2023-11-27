@@ -1,12 +1,14 @@
 {
-    "idSave": 579,
+    "idSave": 734,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "money": 819,
-    "currentSkin": "Ball",
-    "currentLevel": 9,
+    "money": 1008,
+    "currentSkin": "Dice",
+    "currentLevel": 11,
     "premium": false,
     "soundActive": true,
-    "unlockedSkins": []
+    "unlockedSkins": [
+        "Dice"
+    ]
 }

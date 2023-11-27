@@ -118,7 +118,7 @@ namespace HelixJumper.Scripts
             }
             else
             {
-                if (other.transform.parent != null && other.transform.parent.TryGetComponent(out Finish finish))
+                if (other.gameObject.TryGetComponent(out Finish finish))
                 {
                     finish.Finishing();
                     fire.Stop();
