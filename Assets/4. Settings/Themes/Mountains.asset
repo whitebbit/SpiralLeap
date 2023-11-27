@@ -17,4 +17,5 @@ MonoBehaviour:
   cylinder: {fileID: 2100000, guid: 9360662cc7995614e9113ef62c0baedc, type: 2}
   background: {fileID: 2102241535234213929, guid: 9301e8b34c369d7488d62217d718b7b8,
     type: 3}
+  fog: {r: 0, g: 1, b: 0.98136926, a: 0}
   skybox: {fileID: 2100000, guid: 01210524c7185c74babbd24988b46fc0, type: 2}
