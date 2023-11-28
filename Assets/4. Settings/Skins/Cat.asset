@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Cat
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 3fe73d443bbb8eb4bad362c0ead7c677, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
-  buyType: 1
+  - {fileID: 2100000, guid: b2842b8492997dd48855f58285d2ead5, type: 2}
+  color: {r: 0.7176471, g: 0.59607846, b: 0.27058825, a: 1}
+  image: {fileID: 21300000, guid: 00b44628bbc5b4045aef3eeae1191c3c, type: 3}
+  buyType: 2

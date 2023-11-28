@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Treasure Chest
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 929a2e57063ffea45a3787c16c8969ef, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
+  - {fileID: 2100000, guid: bd6ac66b2adefea469338c8e22cc1591, type: 2}
+  color: {r: 0.43529415, g: 0.22352943, b: 0.10980393, a: 1}
+  image: {fileID: 21300000, guid: 2835ee4ebba5dd0419c120ed8e3e839b, type: 3}
   buyType: 1

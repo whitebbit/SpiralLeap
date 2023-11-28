@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Helmet
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 43b6b878a3059fc46baa77ae61780377, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
+  - {fileID: 2100000, guid: dbc6c0a485f65334f8301c15f3daa643, type: 2}
+  color: {r: 0.5294118, g: 0.4666667, b: 0.37647063, a: 1}
+  image: {fileID: 21300000, guid: 3208355d55ed3384da839c6613486b0e, type: 3}
   buyType: 1

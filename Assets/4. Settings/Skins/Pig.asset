@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Pig
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: d29620af26ab88149ba4260050763425, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
-  buyType: 1
+  - {fileID: 2100000, guid: 42b9d6db0c1a61b40bdcad695699fc9b, type: 2}
+  color: {r: 0.6627451, g: 0.27450982, b: 0.42352945, a: 1}
+  image: {fileID: 21300000, guid: d06b7d873caf7d449860aea4c622e8d9, type: 3}
+  buyType: 2

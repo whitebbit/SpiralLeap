@@ -3,8 +3,8 @@
     public enum BuyType
     {
         None,
-        Coins,
         Ad,
+        Coins,
         Premium
     }
 }

@@ -20,4 +20,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b013d4b3aad5b4c4c8182151ebe0c7ea, type: 2}
   color: {r: 0.48235297, g: 0.5137255, b: 0.54901963, a: 1}
   image: {fileID: 21300000, guid: 9f6722df245d3d448953e5bc3b9a3a68, type: 3}
-  buyType: 1
+  buyType: 2

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Shark
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 1b9ebae764ba79248803c62e4eebee8f, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
+  - {fileID: 2100000, guid: c6eeae0034463a64bbf05dc0cf7f27d0, type: 2}
+  color: {r: 0.09019608, g: 0.3921569, b: 0.53333336, a: 1}
+  image: {fileID: 21300000, guid: c78e73874b5b2804885760b532ab4071, type: 3}
   buyType: 1

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Frog
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 291b02b3adb754c4a9e8d81cd58e1500, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
-  buyType: 1
+  - {fileID: 2100000, guid: 4c490a60f772af34382a023623901c91, type: 2}
+  color: {r: 0.3921569, g: 0.54901963, b: 0.14901961, a: 1}
+  image: {fileID: 21300000, guid: 0d301b775fb43ff4db747261fb1c3380, type: 3}
+  buyType: 2

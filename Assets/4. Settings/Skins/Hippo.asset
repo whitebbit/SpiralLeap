@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Hippo
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 51182d03adb2ef047bd4cc1b66d314c1, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
-  buyType: 1
+  - {fileID: 2100000, guid: 71210bd898cec2843be7eb516da6f8ef, type: 2}
+  color: {r: 0.28627452, g: 0.28627452, b: 0.30980393, a: 1}
+  image: {fileID: 21300000, guid: 46b471f1cd4d72541869ee0700b3aafe, type: 3}
+  buyType: 2

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using _3._Scripts.Architecture;
 using _3._Scripts.Architecture.Scriptable;
 using DG.Tweening;
@@ -29,9 +31,10 @@ namespace _3._Scripts.UI
             if(_initialized) return;
             
             var grid = container.GetComponent<GridLayoutGroup>();
-            var skins = Configuration.instance.skinsHolder;
-            container.offsetMin = new Vector2(0, -(skins.Skins.Count / 3 * grid.cellSize.x));
-            foreach (var skin in skins.Skins)
+            var skins = Configuration.instance.skinsHolder.Skins;
+            container.offsetMin = new Vector2(0, -(skins.Count / 3f * grid.cellSize.x) * 1.05f);
+            skins = skins.OrderBy(obj => obj.BuyType).ToList();
+            foreach (var skin in skins)
             {
                 var obj = Instantiate(skinPrefab, container);
                 obj.Initialize(skin);

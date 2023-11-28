@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f80375011b794b47aeca0779ec1ea87d, type: 3}
-  m_Name: Dice
+  m_Name: Cherry
   m_EditorClassIdentifier: 
-  mesh: {fileID: 4300000, guid: 6c8a961de221e464ba7ece58f8839a89, type: 3}
+  mesh: {fileID: 4300000, guid: 5084af6e18d2d2540a89ebe81f9236b1, type: 3}
   materials:
-  - {fileID: 2100000, guid: f3efc8827e43b064b97285e1b1b37432, type: 2}
-  color: {r: 0.9686275, g: 0.95294124, b: 0.9686275, a: 1}
-  image: {fileID: 21300000, guid: 25ea07bcda0efce4b9388674d27a213e, type: 3}
-  buyType: 1
+  - {fileID: 2100000, guid: 24bad22e52ad39441970b15dd3731683, type: 2}
+  color: {r: 0.5254902, g: 0.17254902, b: 0.04705883, a: 1}
+  image: {fileID: 21300000, guid: 841f365c18db39e43aad17b2c742d262, type: 3}
+  buyType: 2
