@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2102241535234213929
 Transform:
@@ -47,6 +47,10 @@ PrefabInstance:
     - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_Name
       value: ice (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4272999408752584, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -111,6 +115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ice (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4272999408752584, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.6
@@ -173,6 +181,10 @@ PrefabInstance:
     - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_Name
       value: ice (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4272999408752584, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -237,6 +249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ice (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4272999408752584, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.71
@@ -299,6 +315,10 @@ PrefabInstance:
     - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_Name
       value: ice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516398735556522, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4272999408752584, guid: e2836aaffebe2c946b0d70f6c502be45, type: 3}
       propertyPath: m_LocalPosition.x

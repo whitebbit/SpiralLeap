@@ -97,7 +97,7 @@ Material:
     - _ReceiveShadowsOff: 1
     - _RimStep: 0
     - _RimStepSmooth: 0
-    - _ShadowStep: 0.777
+    - _ShadowStep: 1
     - _ShadowStepSmooth: 1
     - _Shadow_HSV_H: 0
     - _Shadow_HSV_S: 0

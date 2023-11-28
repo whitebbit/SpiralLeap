@@ -139,8 +139,8 @@ Material:
     - _RimStep: 0
     - _RimStepSmooth: 0
     - _RimStrength: 0.5
-    - _ShadowStep: 0.5
-    - _ShadowStepSmooth: 0
+    - _ShadowStep: 0.73
+    - _ShadowStepSmooth: 1
     - _Shininess: 0.1
     - _SketchHalftoneMax: 1
     - _SketchHalftoneMin: 0.2

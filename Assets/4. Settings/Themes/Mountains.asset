@@ -22,4 +22,4 @@ MonoBehaviour:
     backgroundFog: {r: 0, g: 0.7271333, b: 1, a: 1}
     startValue: 1
     endValue: 200
-    floorFog: {r: 0, g: 0.7254902, b: 1, a: 1}
+    floorFog: {r: 0, g: 0.7254902, b: 1, a: 0.8}

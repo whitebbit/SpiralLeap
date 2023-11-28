@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2102241535234213929
 Transform:
@@ -54,6 +54,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102241535234213929}
     m_Modifications:
+    - target: {fileID: 1241496309280514, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4219641018147404, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -108,6 +112,10 @@ PrefabInstance:
     - target: {fileID: 1241496309280514, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
       propertyPath: m_Name
       value: Neon_Building10 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241496309280514, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4219641018147404, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
       propertyPath: m_RootOrder
@@ -171,6 +179,10 @@ PrefabInstance:
     - target: {fileID: 1494832381282620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
       propertyPath: m_Name
       value: Neon_Building07 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494832381282620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4508944694336620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
       propertyPath: m_RootOrder
@@ -238,6 +250,10 @@ PrefabInstance:
     - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_Name
       value: Neon_Building06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4643784637139548, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_RootOrder
@@ -310,6 +326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon_Building04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963647457397286, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4302302449096442, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -364,6 +384,10 @@ PrefabInstance:
     - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_Name
       value: Neon_Building06 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4643784637139548, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_RootOrder
@@ -436,6 +460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon_Building04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963647457397286, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4302302449096442, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -507,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon_Building10 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241496309280514, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4219641018147404, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -561,6 +593,10 @@ PrefabInstance:
     - target: {fileID: 1494832381282620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
       propertyPath: m_Name
       value: Neon_Building07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494832381282620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4508944694336620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
       propertyPath: m_RootOrder
@@ -625,6 +661,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102241535234213929}
     m_Modifications:
+    - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4643784637139548, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -696,6 +736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon_Building04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963647457397286, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4302302449096442, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -750,6 +794,10 @@ PrefabInstance:
     - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_Name
       value: Neon_Building06 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195400234077158, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4643784637139548, guid: e40cfb7b71b9cb64d8198e9ece01e439, type: 3}
       propertyPath: m_RootOrder
@@ -822,6 +870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon_Building10 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241496309280514, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4219641018147404, guid: dd275707229ed6a4bacb995f7dc2cb45, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -881,6 +933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102241535234213929}
     m_Modifications:
+    - target: {fileID: 1963647457397286, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4302302449096442, guid: 0ed3378674d988e498d97bf29471ed16, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -932,6 +988,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102241535234213929}
     m_Modifications:
+    - target: {fileID: 1494832381282620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4508944694336620, guid: bb2086f956cbad542b41820eafc0c8fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
