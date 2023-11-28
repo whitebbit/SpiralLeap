@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bed26f981e841cca718e49ccf6262b0, type: 3}
+  m_Name: Snow
+  m_EditorClassIdentifier: 
+  ground: {fileID: 2100000, guid: f409f5529d315bf4f87959acff7285e8, type: 2}
+  deadGround: {fileID: 2100000, guid: 9e196e74dc5a06f42a308043b6abe831, type: 2}
+  cylinder: {fileID: 2100000, guid: 9360662cc7995614e9113ef62c0baedc, type: 2}
+  background: {fileID: 2102241535234213929, guid: ada991b536c6a0a4d8b0248a723fb357,
+    type: 3}
+  skybox: {fileID: 2100000, guid: 1474982501a6ef743a225abaa1258796, type: 2}
+  fogSetting:
+    backgroundFog: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+    startValue: 1
+    endValue: 200
+    floorFog: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 0.39607844}

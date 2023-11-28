@@ -113,7 +113,7 @@ Material:
     - __EndGroup: 0
     - __dummy__: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.79692256, b: 0.28773582, a: 1}
+    - _BaseColor: {r: 0.28627455, g: 0.8699016, b: 1, a: 1}
     - _Color: {r: 0.14057496, g: 0.62215006, b: 0.764151, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.785, g: 0.785, b: 0.785, a: 1}
