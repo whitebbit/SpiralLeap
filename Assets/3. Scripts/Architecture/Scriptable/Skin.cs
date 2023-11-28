@@ -12,6 +12,7 @@ namespace _3._Scripts.Architecture.Scriptable
         [SerializeField] private Mesh mesh;
         [SerializeField] private Material[] materials;
         [SerializeField] private Color color;
+        [SerializeField] private float size = 1;
         [Header("Shop Settings")] 
         [SerializeField] private Sprite image;
         [SerializeField] private BuyType buyType;
@@ -24,6 +25,7 @@ namespace _3._Scripts.Architecture.Scriptable
         {
             meshFilter.mesh = mesh;
             meshRenderer.materials = materials;
+            meshRenderer.transform.localScale = new Vector3(size, size, size);
         }
 
         public void ChangeIcon(Sprite newIcon)

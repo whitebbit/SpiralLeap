@@ -70,6 +70,16 @@ public class GameManager : Singleton<GameManager>
         OnSceneLoad();
     }
 
+    private void OnEnable()
+    {
+        YandexGame.ReviewSentEvent += OnReview;
+    }
+
+    private void OnDisable()
+    {
+        YandexGame.ReviewSentEvent += OnReview;
+    }
+
     private static void LoadLevel()
     {
         if (CurrentTheme == null)
@@ -190,7 +200,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (YandexGame.savesData.currentLevel is 3 || YandexGame.savesData.currentLevel % 10 == 0)
         {
-            if (YandexGame.EnvironmentData.reviewCanShow)
+            if (YandexGame.EnvironmentData.reviewCanShow && !YandexGame.savesData.reviewSent)
             {
                 YandexGame.ReviewShow(true);
                 return;
@@ -199,4 +209,11 @@ public class GameManager : Singleton<GameManager>
 
         YandexAD.ShowInterstitial();
     }
+
+    private void OnReview(bool sent)
+    {
+        YandexGame.savesData.reviewSent = sent;
+        YandexGame.SaveProgress();
+    }
+    
 }

@@ -18,7 +18,9 @@ namespace YG
         public int currentLevel;
         public bool premium;
         public bool soundActive;
+        public bool reviewSent;
         public List<string> unlockedSkins;
+        
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 

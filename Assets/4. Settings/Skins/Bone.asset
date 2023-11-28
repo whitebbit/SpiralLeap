@@ -16,5 +16,6 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: aa867934a1434d4439a9d50e728e8c9b, type: 2}
   color: {r: 0.6784314, g: 0.67058825, b: 0.6509804, a: 1}
+  size: 1
   image: {fileID: 21300000, guid: 08c56a8e2357d7747bf2bf75d4f2fc4d, type: 3}
   buyType: 2

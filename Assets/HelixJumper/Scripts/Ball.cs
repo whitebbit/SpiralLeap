@@ -15,6 +15,8 @@ namespace HelixJumper.Scripts
 {
     public class Ball : Singleton<Ball>
     {
+        [SerializeField] private MeshRenderer meshRenderer;
+        [SerializeField] private MeshFilter meshFilter;
         [SerializeField] private ParticleSystem fire;
         [Space] public Animator BallAnim;
         public Rigidbody BallRB;
@@ -35,9 +37,7 @@ namespace HelixJumper.Scripts
         protected override void Awake()
         {
             base.Awake();
-            var meshRender = GetComponent<MeshRenderer>();
-            var meshFilter = GetComponent<MeshFilter>();
-            skinHolder = new SkinHolder(meshRender, meshFilter);
+            skinHolder = new SkinHolder(meshRenderer, meshFilter);
         }
 
         private void Start()
