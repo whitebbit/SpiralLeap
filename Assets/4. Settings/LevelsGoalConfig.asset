@@ -19,9 +19,29 @@ MonoBehaviour:
     maxGoal: 30
   - minLevel: 11
     maxLevel: 30
-    minGoal: 50
-    maxGoal: 70
+    minGoal: 30
+    maxGoal: 40
   - minLevel: 31
-    maxLevel: 2147483647
+    maxLevel: 71
+    minGoal: 40
+    maxGoal: 50
+  - minLevel: 72
+    maxLevel: 100
+    minGoal: 50
+    maxGoal: 60
+  - minLevel: 101
+    maxLevel: 110
+    minGoal: 60
+    maxGoal: 70
+  - minLevel: 111
+    maxLevel: 120
     minGoal: 70
+    maxGoal: 80
+  - minLevel: 120
+    maxLevel: 130
+    minGoal: 90
     maxGoal: 100
+  - minLevel: 131
+    maxLevel: 150
+    minGoal: 80
+    maxGoal: 90
