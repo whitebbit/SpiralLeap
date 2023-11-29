@@ -19,6 +19,7 @@ MonoBehaviour:
     type: 3}
   skybox: {fileID: 2100000, guid: 1474982501a6ef743a225abaa1258796, type: 2}
   fogSetting:
+    enableBackgroundFog: 1
     backgroundFog: {r: 1, g: 0.88038653, b: 0.495283, a: 0.8}
     startValue: 25
     endValue: 200

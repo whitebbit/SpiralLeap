@@ -20,6 +20,6 @@ MonoBehaviour:
   skybox: {fileID: 2100000, guid: f3cfa02d4ece20643b4e73b6ce054a25, type: 2}
   fogSetting:
     backgroundFog: {r: 1, g: 1, b: 1, a: 0}
-    startValue: 500
+    startValue: 501
     endValue: 501
     floorFog: {r: 0, g: 0.7254902, b: 1, a: 0}

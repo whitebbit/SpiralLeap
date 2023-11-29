@@ -29,7 +29,9 @@ namespace _3._Scripts.Architecture.Scriptable
     [Serializable]
     public class FogSetting
     {
-        [Header("Background")] public Color backgroundFog;
+        [Header("Background")] 
+        public bool enableBackgroundFog;
+        public Color backgroundFog;
 
         public float startValue;
         public float endValue;
