@@ -2353,7 +2353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &316058228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13211,6 +13211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoneyWidget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229391874204789089, guid: b60639f4a9a85c540894c8a8633e8764,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7388920873884245520, guid: b60639f4a9a85c540894c8a8633e8764,
         type: 3}
