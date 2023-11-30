@@ -32,13 +32,16 @@ namespace _3._Scripts
 
         private IEnumerator LoadScene()
         {
-            while (!YandexGame.SDKEnabled)
-            {
-                Debug.Log($"YandexGame.SDKEnabled is {YandexGame.SDKEnabled}");
-                yield return null;
-            }
+            yield return new WaitUntil(Ready);
+
+            yield return new WaitForSeconds(1f);
 
             SceneManager.LoadScene("Main");
+        }
+
+        private bool Ready()
+        {
+            return YandexGame.SDKEnabled;
         }
     }
 }

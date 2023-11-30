@@ -170,8 +170,8 @@ MonoBehaviour:
     description: "\u0412\u044B \u0441\u0442\u0430\u043D\u0435\u0442\u0435 \u043F\u0440\u0435\u043C\u0438\u0443\u043C
       \u0438\u0433\u0440\u043E\u043A\u043E\u043C!"
     imageURI: 
-    priceValue: 10
-    consumed: 1
+    priceValue: 5
+    consumed: 0
   metricaEnable: 0
   metricaCounterID: 0
   debug: 1

@@ -202,7 +202,7 @@ public class GameManager : Singleton<GameManager>
         {
             if (YandexGame.EnvironmentData.reviewCanShow && !YandexGame.savesData.reviewSent)
             {
-                YandexGame.ReviewShow(true);
+                YandexGame.ReviewShow(false);
                 return;
             }
         }

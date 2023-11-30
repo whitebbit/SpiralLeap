@@ -20,8 +20,9 @@ namespace _3._Scripts.UI
         private UISkin _currentSkin;
         private bool _initialized;
 
-        private void Start()
+        protected override void Awake()
         {
+            base.Awake();
             closeButton.onClick.AddListener(Close);
             GetLoad();
         }
@@ -66,7 +67,7 @@ namespace _3._Scripts.UI
             catch (Exception e)
             {
                 _initialized = false;
-                Debug.LogError(e);
+                Debug.Log(e);
                 throw;
             }
         }

@@ -115,6 +115,7 @@ namespace HelixJumper.Scripts
                 if (Boosted(other)) return;
                 SetLastHelix(other);
                 Fail();
+                CameraShaker.instance.StopShake();
             }
             else
             {

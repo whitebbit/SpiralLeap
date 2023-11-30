@@ -1,12 +1,12 @@
 {
-    "idSave": 747,
+    "idSave": 783,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
-    "money": 99960806,
+    "money": 99965830,
     "currentSkin": "Rabbit",
     "currentLevel": 6,
-    "premium": false,
+    "premium": true,
     "soundActive": false,
     "reviewSent": false,
     "unlockedSkins": [
@@ -65,6 +65,7 @@
         "Gold Coin Bag",
         "Gift",
         "Ghost",
-        "Dice"
+        "Dice",
+        "Secret"
     ]
 }
