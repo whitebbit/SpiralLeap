@@ -1,13 +1,13 @@
 {
-    "idSave": 783,
+    "idSave": 844,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
-    "money": 99965830,
+    "money": 99965882,
     "currentSkin": "Rabbit",
     "currentLevel": 6,
     "premium": true,
-    "soundActive": false,
+    "soundActive": true,
     "reviewSent": false,
     "unlockedSkins": [
         "Wolf",

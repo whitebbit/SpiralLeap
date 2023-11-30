@@ -20,12 +20,12 @@ namespace _3._Scripts.UI
         {
             buyButton.onClick.AddListener(() =>
             {
-                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                AudioManager.instance.PlayOneShot("click");
                 YandexGame.BuyPayments(id);
             });
             closeButton.onClick.AddListener(() =>
             {
-                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                AudioManager.instance.PlayOneShot("click");
                 GameManager.instance.ChangePanel(GameManager.instance.MenuPanel);
             });
         }

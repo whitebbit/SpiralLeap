@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4645132edefd4c74968a0c941a98fb89, type: 3}
+  m_Name: Audio Database
+  m_EditorClassIdentifier: 
+  _items:
+  - Clip: {fileID: 8300000, guid: 77e14a044efb3484995cb7faefc6d63d, type: 3}
+    Key: background
+    FolderPath: 1. Visual\Sounds\
+    Name: Funky Chill 2 loop.wav
+    Preload: 1
+    _id: a2530fa8-8ac4-4ad7-8bd4-4601a1b7ea29
+  - Clip: {fileID: 8300000, guid: df7d25978f9d0497faa8befca7e29c19, type: 3}
+    Key: click
+    FolderPath: 1. Visual\Sounds\
+    Name: CGM3_Crop_Produce_01_2.wav
+    Preload: 0
+    _id: bcec73ef-06fe-4a94-abaa-c879e8b2d7da
+  - Clip: {fileID: 8300000, guid: 5ea9b321809ddd843873462c5770dbf0, type: 3}
+    Key: reward
+    FolderPath: 1. Visual\Sounds\
+    Name: Item5A.ogg
+    Preload: 1
+    _id: 89df1f88-715d-4f21-a94c-dedd016a533d
+  - Clip: {fileID: 8300000, guid: 95e9957eb40064935a54aaca8ca04c01, type: 3}
+    Key: win
+    FolderPath: 1. Visual\Sounds\
+    Name: CGM3_Quest_Complete_01.wav
+    Preload: 1
+    _id: 4f63f940-ef88-49c7-b9c1-ccae80081d42
+  - Clip: {fileID: 8300000, guid: 9212b64f8618343cf90461126a9444ee, type: 3}
+    Key: lose
+    FolderPath: 1. Visual\Sounds\
+    Name: LQ_Lose_Sting_01.wav
+    Preload: 1
+    _id: 36832171-6ca4-4046-9cd2-2214a9b36b7a
+  - Clip: {fileID: 8300000, guid: 8db61ce7e74fe694dbd2e2b038e0001d, type: 3}
+    Key: unlock_level
+    FolderPath: 1. Visual\Sounds\
+    Name: ui_menu_popup_message_reward_01.wav
+    Preload: 1
+    _id: e5d3e54c-a353-4941-942d-2b5b6c753c89
+  - Clip: {fileID: 8300000, guid: f762dd5704ef22a4fbe1b96c6578727e, type: 3}
+    Key: buy_skin
+    FolderPath: 1. Visual\Sounds\
+    Name: ui_menu_popup_message_07.wav
+    Preload: 1
+    _id: 425216ce-2361-43ce-ab48-df052145d659
+  - Clip: {fileID: 8300000, guid: 66d7289dbf54f514398aacf8dafa02b6, type: 3}
+    Key: hit
+    FolderPath: HelixJumper\Audio\
+    Name: hit.ogg
+    Preload: 1
+    _id: 7737f190-9580-4551-97a7-d51238edc447
+  - Clip: {fileID: 8300000, guid: eb8958b8187e0a747b3bccf37f2e125a, type: 3}
+    Key: platform
+    FolderPath: HelixJumper\Audio\
+    Name: Platform.ogg
+    Preload: 1
+    _id: 82089db5-55af-4960-9748-6a697887529c

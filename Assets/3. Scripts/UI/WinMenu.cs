@@ -37,7 +37,7 @@ namespace _3._Scripts.UI
             _rewardAdObject = new RewardAdObject();
             continueButton.onClick.AddListener(()=>
             {
-                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                AudioManager.instance.PlayOneShot("click");
                 StartCoroutine(OpenProgress());
             });
             adRewardButton.onClick.AddListener(GetBonus);
@@ -97,7 +97,7 @@ namespace _3._Scripts.UI
         private IEnumerator AdReward(int id)
         {
             if (id != _rewardAdObject.id) yield break;
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
+            AudioManager.instance.PlayOneShot("reward");
             _bonusUsed = true;
             reward.text = $"{ScoreManager.instance.levelGoal * _currentMultiplier.Multiplier}<sprite=0>";
             yield return new WaitForSeconds(0.75f);

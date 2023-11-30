@@ -39,7 +39,7 @@ namespace _3._Scripts.Game.Purchase
 
             if (!loadMainScene) yield break;
             
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
+            AudioManager.instance.PlayOneShot("reward");
             SceneManager.LoadScene("Main");
         }
     }

@@ -28,7 +28,7 @@ namespace _3._Scripts.UI
             restartButton.onClick.AddListener(() =>
             {
                 SceneManager.LoadScene(1);
-                AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+                AudioManager.instance.PlayOneShot("click");
             });
             continueButton.onClick.AddListener(() =>
             {
@@ -61,7 +61,7 @@ namespace _3._Scripts.UI
             _secondChanceUsed = true;
             Ball.instance.Continue();
             GameManager.instance.ChangePanel(GameManager.instance.PlayPanel);
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnReward);
+            AudioManager.instance.PlayOneShot("reward");
         }
     }
 }

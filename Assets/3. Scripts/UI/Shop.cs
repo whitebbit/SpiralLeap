@@ -54,7 +54,7 @@ namespace _3._Scripts.UI
 
         private void Close()
         {
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.UIClick);
+            AudioManager.instance.PlayOneShot("click");
             GameManager.instance.ChangePanel(GameManager.instance.MenuPanel);
         }
 

@@ -6,6 +6,7 @@ using _3._Scripts.Game;
 using _3._Scripts.Player;
 using _3._Scripts.UI;
 using DG.Tweening;
+using Plugins.Audio.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
@@ -21,9 +22,7 @@ namespace HelixJumper.Scripts
         [Space] public Animator BallAnim;
         public Rigidbody BallRB;
         public Bolt SplashFX;
-        public AudioSource Audio;
-        public AudioClip BoltAudio;
-        public AudioClip CoinAudio;
+        public SourceAudio Audio;
 
         [HideInInspector] public bool isFly;
         public static bool IsGameOver;
@@ -67,7 +66,7 @@ namespace HelixJumper.Scripts
         {
             if (!_setVelocity) return;
 
-            Audio.PlayOneShot(BoltAudio);
+            Audio.PlayOneShot("hit");
             BallAnim.SetTrigger(JumpAnimation);
             BallRB.velocity = Vector3.up * 8;
             _setVelocity = false;
@@ -170,7 +169,7 @@ namespace HelixJumper.Scripts
 
             Boost();
             if (!pieceCreator.destroyed)
-                Audio.PlayOneShot(CoinAudio);
+                Audio.PlayOneShot("platform");
             pieceCreator.DestroyPieces();
 
             RotateAnimation(new Vector3(0, 180, 0), .5f);
@@ -181,7 +180,7 @@ namespace HelixJumper.Scripts
             IsGameOver = true;
             BallRB.isKinematic = true;
             GameManager.instance.ChangePanel(GameManager.instance.LosePanel);
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnLose);
+            AudioManager.instance.PlayOneShot("lose");
             CameraShaker.instance.StopShake();
         }
 

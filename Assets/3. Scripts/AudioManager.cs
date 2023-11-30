@@ -1,27 +1,26 @@
 ﻿using _3._Scripts.Architecture;
 using _3._Scripts.Architecture.Scriptable;
+using Plugins.Audio.Core;
 using UnityEngine;
 
 namespace _3._Scripts
 {
-    [RequireComponent(typeof(AudioSource))]
     public class AudioManager: Singleton<AudioManager>
     {
-        [field: SerializeField] public SoundsConfig Config { get; private set; }
-        [SerializeField] private AudioSource musicAudioSource;
-        private AudioSource _audioSource;
+        [SerializeField] private SourceAudio musicAudioSource;
+        private SourceAudio _audioSource;
         protected override void Awake()
         {
             base.Awake();
             DontDestroyOnLoad(gameObject);
             
-            _audioSource = GetComponent<AudioSource>();
+            _audioSource = GetComponent<SourceAudio>();
         }
 
-        public void PlayOneShot(AudioClip clip, float volume = 0.25f)
+        public void PlayOneShot(string key, float volume = 0.25f)
         {
-            _audioSource.volume = volume;
-            _audioSource.PlayOneShot(clip);
+            _audioSource.Volume = volume;
+            _audioSource.PlayOneShot(key);
         }
 
         public void MusicState(bool state)
@@ -29,8 +28,8 @@ namespace _3._Scripts
             
             if(state)
             {
-                if(!musicAudioSource.isPlaying)
-                    musicAudioSource.Play();
+                if(!musicAudioSource.IsPlaying)
+                    musicAudioSource.Play("background");
             } 
             else musicAudioSource.Stop();
         }

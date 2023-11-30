@@ -13,7 +13,7 @@ namespace _3._Scripts.Game
             if(_finished) return;
             _finished = true;
             GameManager.instance.ChangePanel(GameManager.instance.WinPanel);
-            AudioManager.instance.PlayOneShot(AudioManager.instance.Config.OnWin);
+            AudioManager.instance.PlayOneShot("win");
         }
     }
 }
