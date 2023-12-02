@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AudioManagementSettings
   m_EditorClassIdentifier: 
   CanDebug: 1
-  CanValidate: 0
-  _database: {fileID: 11400000, guid: 3b0d0b4c3c60cad43982b18accd442a9, type: 2}
+  CanValidate: 1
+  _database: {fileID: 0}

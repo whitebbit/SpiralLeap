@@ -119,10 +119,10 @@ Material:
     - _OutlineWidth: 0
     - _Parallax: 0.02
     - _QueueOffset: 0
-    - _RampSmooth: 0.1
+    - _RampSmooth: 0.3
     - _RampSmoothing: 1
     - _RampSmoothingOtherLights: 1
-    - _RampThreshold: 0.5
+    - _RampThreshold: 0.8
     - _RampThresholdOtherLights: 1
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
@@ -152,10 +152,10 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    - _HColor: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
+    - _HColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _SColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _VColorBlendOffset: {r: 0, g: 0, b: 0, a: 0}
