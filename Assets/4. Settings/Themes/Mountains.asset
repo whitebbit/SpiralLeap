@@ -21,6 +21,6 @@ MonoBehaviour:
   fogSetting:
     enableBackgroundFog: 1
     backgroundFog: {r: 0, g: 0.7271333, b: 1, a: 1}
-    startValue: 25
-    endValue: 200
+    startValue: 1
+    endValue: 150
     floorFog: {r: 0, g: 0.7254902, b: 1, a: 0.8}
