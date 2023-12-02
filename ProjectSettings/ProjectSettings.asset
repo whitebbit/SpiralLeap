@@ -55,7 +55,7 @@ PlayerSettings:
   mipStripping: 0
   numberOfMipsStripped: 0
   numberOfMipsStrippedPerMipmapLimitGroup: {}
-  m_StackTraceTypes: 000000000000000000000000000000000000000001000000
+  m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosUseCustomAppBackgroundBehavior: 0
@@ -437,6 +437,9 @@ PlayerSettings:
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000
     m_Automatic: 1
+  - m_BuildTarget: WebGLSupport
+    m_APIs: 0b000000
+    m_Automatic: 1
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -455,7 +458,7 @@ PlayerSettings:
     CONNECT_WEB_AUDIO_PLUGIN_FILES: true
     CONNECT_YANDEX_SDK: true
     CUSTOMIZE_CURSOR: false
-    DEVICE_PIXEL_RATIO: 0.95
+    DEVICE_PIXEL_RATIO: 
     DISABLE_CONSOLE_LOG: true
     ENABLE_CONSOLE: 
     LOCK_ASPECT_RATIO_ON_DESKTOP: 

@@ -57,13 +57,13 @@ MonoBehaviour:
     _id: 425216ce-2361-43ce-ab48-df052145d659
   - Clip: {fileID: 8300000, guid: 66d7289dbf54f514398aacf8dafa02b6, type: 3}
     Key: hit
-    FolderPath: HelixJumper\Audio\
+    FolderPath: 1. Visual\Sounds\
     Name: hit.ogg
     Preload: 1
-    _id: 7737f190-9580-4551-97a7-d51238edc447
+    _id: 55f9892e-5c47-45dc-a25c-ba51c1f9ca6e
   - Clip: {fileID: 8300000, guid: eb8958b8187e0a747b3bccf37f2e125a, type: 3}
     Key: platform
-    FolderPath: HelixJumper\Audio\
+    FolderPath: 1. Visual\Sounds\
     Name: Platform.ogg
     Preload: 1
-    _id: 82089db5-55af-4960-9748-6a697887529c
+    _id: 45d94b01-8880-4846-ad99-c68f43b5f02e

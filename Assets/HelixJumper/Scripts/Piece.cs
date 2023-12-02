@@ -26,10 +26,10 @@ namespace HelixJumper.Scripts
             rigidbody.AddForce(new Vector3(xForce, .25f, 0) * 25,
                 ForceMode.Impulse);
 
-            collider.isTrigger = true;
+            collider.enabled = false;
 
             transform.DOScale(Vector3.zero, delay * 0.25f)
-                .OnComplete(() => gameObject.SetActive(false))
+                .OnComplete(() => Destroy(gameObject))
                 .SetDelay(delay);
         }
     }

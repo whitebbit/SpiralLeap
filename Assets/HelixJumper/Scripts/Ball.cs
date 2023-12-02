@@ -1,14 +1,11 @@
 ﻿using System;
 using _3._Scripts;
 using _3._Scripts.Architecture;
-using _3._Scripts.Architecture.Scriptable;
 using _3._Scripts.Game;
 using _3._Scripts.Player;
-using _3._Scripts.UI;
 using DG.Tweening;
 using Plugins.Audio.Core;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using YG;
 using Random = UnityEngine.Random;
 
@@ -62,7 +59,7 @@ namespace HelixJumper.Scripts
             }
         }
 
-        private void LateUpdate()
+        private void FixedUpdate()
         {
             if (!_setVelocity) return;
 

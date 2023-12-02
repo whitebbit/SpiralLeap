@@ -1,4 +1,5 @@
-﻿using YG;
+﻿using Plugins.Audio.Core;
+using YG;
 
 namespace _3._Scripts.AD
 {
@@ -7,6 +8,8 @@ namespace _3._Scripts.AD
         public static void ShowInterstitial()
         {
             if(YandexGame.savesData.premium) return;
+            
+            AudioPauseHandler.Instance.PauseAudio();
             YandexGame.FullscreenShow();
         }
     }

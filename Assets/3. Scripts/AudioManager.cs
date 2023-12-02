@@ -25,7 +25,6 @@ namespace _3._Scripts
 
         public void MusicState(bool state)
         {
-            
             if(state)
             {
                 if(!musicAudioSource.IsPlaying)

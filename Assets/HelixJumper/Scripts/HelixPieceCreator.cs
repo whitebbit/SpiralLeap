@@ -20,16 +20,7 @@ public class HelixPieceCreator : MonoBehaviour
     public bool destroyed { get; private set; }
 
     private static int _lastLevelNumber;
-
-    private void OnEnable()
-    {
-        //MoveController.Move += Move;
-    }
-
-    private void OnDisable()
-    {
-        //MoveController.Move -= Move;
-    }
+    
 
     private void Awake()
     {
@@ -43,20 +34,11 @@ public class HelixPieceCreator : MonoBehaviour
         CreatePieces();
         transform.rotation = Quaternion.Euler(0, Random.Range(0, 180f), 0);
     }
-
-    private void Move()
-    {
-        if (!Ball.IsGameOver && GameManager.isStarted)
-        {
-            transform.Rotate(Vector3.up, -Input.GetAxis("Mouse X") * 10f, Space.World);
-        }
-    }
-
+    
     private void CreatePieces()
     {
         float zAngeValue = 0;
-
-        //Create all piece
+        
         for (var i = 0; i < PIECE_COUNT; i++)
         {
             var piece = Instantiate(piecePrefab, transform, false);
@@ -65,8 +47,7 @@ public class HelixPieceCreator : MonoBehaviour
             zAngeValue += 30f;
             _pieceList.Add(piece);
         }
-
-        //Remove extra piece
+        
         RemovePiece(Random.Range(0, 7));
         CreateDeadPiece();
     }

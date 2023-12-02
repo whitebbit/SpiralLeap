@@ -20,9 +20,6 @@ namespace _3._Scripts
         {
             base.Awake();
             DontDestroyOnLoad(gameObject);
-#if !UNITY_EDITOR
-            Application.targetFrameRate = 60;
-#endif
         }
 
         private void Start()
@@ -32,9 +29,13 @@ namespace _3._Scripts
 
         private IEnumerator LoadScene()
         {
+            var startTime = Time.time;
+            
             yield return new WaitUntil(Ready);
-
-            yield return new WaitForSeconds(1f);
+            
+            var elapsedTime = Time.time - startTime;
+            
+            yield return new WaitForSeconds(elapsedTime);
 
             SceneManager.LoadScene("Main");
         }
